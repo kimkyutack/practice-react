@@ -2,8 +2,6 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 
 // 동적 임포트를 위한 lazy 컴포넌트들
 const LazyUserApp = lazy(() => import("./micro-apps/UserApp"));
-const LazyProductApp = lazy(() => import("./micro-apps/ProductApp"));
-const LazyOrderApp = lazy(() => import("./micro-apps/OrderApp"));
 
 // 마이크로 앱 인터페이스
 interface MicroAppConfig {
@@ -42,26 +40,6 @@ const microApps: MicroAppConfig[] = [
     team: "User Team",
     lastDeployed: "2024-01-15",
     version: "1.2.0",
-  },
-  {
-    id: "product-app",
-    name: "상품 관리 앱",
-    description: "상품 카탈로그, 검색, 필터링 및 관리",
-    component: LazyProductApp,
-    dependencies: ["react", "react-dom", "shared-ui"],
-    team: "Product Team",
-    lastDeployed: "2024-01-14",
-    version: "2.1.0",
-  },
-  {
-    id: "order-app",
-    name: "주문 관리 앱",
-    description: "주문 생성, 조회, 상태 관리 및 결제",
-    component: LazyOrderApp,
-    dependencies: ["react", "react-dom", "shared-ui"],
-    team: "Order Team",
-    lastDeployed: "2024-01-13",
-    version: "1.5.0",
   },
 ];
 
