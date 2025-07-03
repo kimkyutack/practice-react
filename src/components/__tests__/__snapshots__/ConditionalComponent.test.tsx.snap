@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConditionalComponent 관리자 로그인 상태의 스냅샷이 일치한다 1`] = `
+<div>
+  <div
+    data-testid="conditional-component"
+  >
+    <div
+      data-testid="logged-in-content"
+    >
+      <h3>
+        환영합니다!
+      </h3>
+      <div
+        data-testid="admin-panel"
+      >
+        <h4>
+          관리자 패널
+        </h4>
+        <p>
+          관리자만 볼 수 있는 내용입니다
+        </p>
+      </div>
+      <div
+        data-testid="user-details"
+      >
+        <p>
+          사용자 역할: 
+          admin
+        </p>
+        <p>
+          상세 정보가 표시됩니다
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ConditionalComponent 로그인하지 않은 상태의 스냅샷이 일치한다 1`] = `
+<div>
+  <div
+    data-testid="conditional-component"
+  >
+    <div
+      data-testid="login-prompt"
+    >
+      <h3>
+        로그인이 필요합니다
+      </h3>
+      <p>
+        계속하려면 로그인해주세요
+      </p>
+    </div>
+  </div>
+</div>
+`;
